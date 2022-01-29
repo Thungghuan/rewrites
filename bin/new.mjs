@@ -16,11 +16,12 @@ console.log(`${project} created`)
 
 let answer = await question('Do you want to install dependencies? [Y/n] ')
 if (answer.toLowerCase() !== 'n') {
-  await $`cd ${project} && npm install`
+  await $`cd ${project}`
+  await $`pnpm install`
   await $`code ${project}`
 } else {
-  console.log('Type commands below to start your project yourself:\n')
+  console.log('Use commands below to start your project yourself:\n')
 
   console.log(chalk.yellow(`cd ${project}`))
-  console.log(chalk.yellow(`npm install`))
+  console.log(chalk.yellow(`pnpm install`))
 }
