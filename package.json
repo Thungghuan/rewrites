@@ -1,0 +1,20 @@
+{
+  "name": "rewrites",
+  "version": "1.0.0",
+  "description": "Rewrite some libraries or functions in TypeScript or JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "new": "bin/new.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thungghuan/rewrites.git"
+  },
+  "keywords": [],
+  "author": "Thungghuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Thungghuan/rewrites/issues"
+  },
+  "homepage": "https://github.com/Thungghuan/rewrites"
+}
