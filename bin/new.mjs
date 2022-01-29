@@ -10,6 +10,8 @@ let content = JSON.parse(
 content.name = 'rewrite_' + project
 await fs.writeFile(`${project}/package.json`, JSON.stringify(content, null, 2))
 
+await $`echo '# Rewrite ${project}' >> ${project}/README.md`
+
 console.log(`${project} created`)
 
 let answer = await question('Do you want to install dependencies? [Y/n] ')
