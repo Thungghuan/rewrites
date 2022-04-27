@@ -71,4 +71,8 @@ export class MyPromise<T = unknown> {
   catch(onRejected: (reason: any) => void) {
     return this.then(undefined, onRejected)
   }
+
+  finally(callback: (value: any) => void) {
+    return this.then(callback, callback)
+  }
 }
