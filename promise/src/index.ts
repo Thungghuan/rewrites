@@ -41,7 +41,7 @@ export class MyPromise<T = unknown> {
     })
   }
 
-  then(onFulfilled: (result: T) => void, onRejected?: (reason: any) => void) {
+  then(onFulfilled?: (result: T) => void, onRejected?: (reason: any) => void) {
     onFulfilled =
       typeof onFulfilled === 'function'
         ? onFulfilled
@@ -60,11 +60,15 @@ export class MyPromise<T = unknown> {
     }
 
     if (this.status === MyPromise.FUFFILED) {
-      setTimeout(() => onFulfilled(this.result!))
+      setTimeout(() => onFulfilled!(this.result!))
     }
 
     if (this.status === MyPromise.REJECTED) {
       setTimeout(() => onRejected!(this.result))
     }
+  }
+
+  catch(onRejected: (reason: any) => void) {
+    return this.then(undefined, onRejected)
   }
 }
