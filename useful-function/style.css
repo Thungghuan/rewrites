@@ -80,7 +80,6 @@
   align-items: center;
 }
 
-
 .ring-progress .mask {
   width: 55px;
   height: 110px;
@@ -90,16 +89,12 @@
   z-index: 5;
   transition: all 0.1s linear;
 }
-/* 
-.ring-progress .right-half {
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  transform: rotate(-135deg);
-  z-index: var(--right-z-index);
-}
 
-.ring-progress .left-half {
-  border-right-color: transparent;
-  border-top-color: transparent;
-  transform: rotate(45deg);
-} */
+.ring-progress2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
