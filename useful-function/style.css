@@ -1,0 +1,105 @@
+.wrapper {
+  width: 200px;
+  height: 200px;
+  background-color: #eeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: transparent 20px solid;
+  border-right: transparent 20px solid;
+  border-bottom: transparent 20px solid;
+  border-top: red 34px solid;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.semi1 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 50px solid black;
+  border-radius: 100%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(315deg);
+}
+
+.semi2 {
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 50px solid black;
+  border-radius: 100%;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(135deg);
+}
+
+.ring-progress {
+  width: 110px;
+  height: 110px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ring-progress .right-half,
+.ring-progress .left-half {
+  width: 90px;
+  height: 90px;
+  position: absolute;
+  border: 10px solid rgb(96, 230, 232);
+  border-radius: 100%;
+  z-index: 3;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(-135deg);
+  transition: transform 0.2s ease-out;
+}
+
+.ring-progress .progress-num {
+  width: 60px;
+  height: 60px;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.ring-progress .mask {
+  width: 55px;
+  height: 110px;
+  position: absolute;
+  background-color: #eee;
+  border-radius: 100;
+  z-index: 5;
+  transition: all 0.1s linear;
+}
+/* 
+.ring-progress .right-half {
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  transform: rotate(-135deg);
+  z-index: var(--right-z-index);
+}
+
+.ring-progress .left-half {
+  border-right-color: transparent;
+  border-top-color: transparent;
+  transform: rotate(45deg);
+} */

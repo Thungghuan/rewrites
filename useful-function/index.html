@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Playground</title>
-</head>
-<body>
-  <script type="module" src="/playground/main.ts"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Playground</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <div class="triangle"></div> -->
+      <div class="circle">
+        <div class="semi1"></div>
+        <div class="semi2"></div>
+      </div>
+    </div>
+
+    <fieldset>
+      <legend>debounce</legend>
+      <button class="debounce">debounce btn</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>throttle</legend>
+      <button class="throttle">throttle btn</button>
+    </fieldset>
+
+    <div class="wrapper">
+      <div class="ring-progress">
+        <div class="progress-num">0</div>
+        <div class="right-half"></div>
+        <div class="mask"></div>
+        <div class="left-half"></div>
+      </div>
+    </div>
+    <input class="progress-range" type="range" max="100" min="0" value="0" />
+
+    <script type="module" src="/playground/main.ts"></script>
+  </body>
 </html>
