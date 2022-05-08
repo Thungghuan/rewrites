@@ -1,1 +1,0 @@
-/// <reference path="./package/vitest/importMeta.d.ts" />

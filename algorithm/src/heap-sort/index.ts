@@ -46,10 +46,12 @@ function heapSort(arr: number[]) {
   return result
 }
 
+// @ts-ignore
 if (import.meta.vitest) {
+  // @ts-ignore
   const { expect, it } = import.meta.vitest
 
-  it('array', () => {
+  it('heap-sort', () => {
     expect(heapSort(arr)).toMatchInlineSnapshot(`
       [
         0,
