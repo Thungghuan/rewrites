@@ -98,3 +98,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.bfc-wrapper {
+  margin: 0;
+  width: 200px;
+  height: 200px;
+  background-color: #eee;
+  /* overflow: hidden; */
+}
+
+.bfc-inner {
+  margin-top: 20px;
+}

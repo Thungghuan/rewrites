@@ -42,6 +42,23 @@
       </div>
     </div>
 
+    <button class="once">Only once</button>
+    <script>
+      document.querySelector('.once').addEventListener(
+        'click',
+        () => {
+          console.log('only once')
+        },
+        {
+          once: true
+        }
+      )
+    </script>
+
+    <div class="bfc-wrapper">
+      <div class="bfc-inner">inner</div>
+    </div>
+
     <script type="module" src="/playground/main.ts"></script>
   </body>
 </html>
